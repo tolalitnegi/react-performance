@@ -111,3 +111,5 @@ nvm use 14
 yarn install
 yarn start
 ```
+## Heroku
+ https://git.heroku.com/react-performance-lalit.git 
