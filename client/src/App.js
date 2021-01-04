@@ -12,6 +12,7 @@ import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
 import ErrorBoundary from './components/error-boundary/error-boundary.component';
 
+import Counter from './pages/performance/counter.component';
 
 // lazy loading the other routes
 /* 
@@ -43,6 +44,8 @@ const App = ({ checkUserSession, currentUser }) => {
         <ErrorBoundary>
           <Suspense fallback={waitDiv}>
             <Route exact path='/' component={HomePage} />
+
+            <Route exact path='/counter' component={Counter} />
 
             <Route path='/shop' component={ShopPage} />
 
