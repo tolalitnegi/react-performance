@@ -107,7 +107,8 @@ You should go for React.PureComponent when you can satisfy any of the below cond
 ## client code setup 
 ```
 cd client
-nvm use 14
+nvm use 10
+# grpc vs  node version issues with 14
 yarn install
 yarn start
 ```
